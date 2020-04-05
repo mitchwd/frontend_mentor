@@ -29,58 +29,72 @@
     </style>
   </head>
 
-  <body class="container mx-auto">
-    <header class="w-full p-10">
-      <img src="images/logo.svg" alt="Base Apparel Logo" />
-    </header>
+  <body>
+    <div class="flex h-full">
+      <div class="flex-1 container mx-auto lg:ml-48 lg:mr-48">
+        <header class="w-full p-10">
+          <img src="images/logo.svg" alt="Base Apparel Logo" />
+        </header>
 
-    <img
-      src="images/hero-mobile.jpg"
-      class="w-full md:hidden"
-      alt="Hero image of a woman win a peach shirt"
-    />
-
-    <h1 class="text-5xl text-center uppercase font-light tracking-widest pt-16">
-      We're<br />
-      <span class="font-normal text-black">coming<br />soon</span>
-    </h1>
-
-    <p class="pt-5 leading-relaxed text-center p-10">
-      Hello fellow shoppers! We're currently building our new fashion store. Add your email below to
-      stay up-to-date with announcements and our launch deals.
-    </p>
-
-    <form action="#" class="w-10/12 mx-auto text-sm">
-      <div class="inline-block relative w-full">
-        <input
-          type="email"
-          placeholder="Email Address"
-          required
-          class="block w-full rounded-full border border-gray-500 px-5 p-4 text-black leading-none"
+        <img
+          src="images/hero-mobile.jpg"
+          class="w-full lg:hidden"
+          alt="Hero image of a woman win a peach shirt"
         />
-        <button type="submit"
-        href="#" class="absolute inset-y-0 right-0 flex items-center px-6 text-gray-700 bg-red-500 rounded-full shadow-lg"
-        >
-          <svg
-              class="fill-current h-4 w-4"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 10 20"
-            >
-              <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
-            </svg>
-        </div>
-      </button>
-      <p class="pl-4 pt-2 text-red-500 text-xs">Please provide a valid email</p>
-    </div>
-    </form>
 
-    <footer class="pt-5">
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
-        >.<br />
-        Made with &hearts; by <a href="http://www.mitchwd/">@mitchwd</a>.
-      </p>
-    </footer>
+        <h1
+          class="pl-10 text-5xl lg:text-6xl text-center lg:text-left uppercase font-light tracking-widest pt-16"
+        >
+          We're<br />
+          <span class="font-normal text-black">coming<br />soon</span>
+        </h1>
+
+        <p class="pt-5 p-10 leading-relaxed text-center lg:text-left">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email
+          below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form action="#" class="w-10/12 mx-auto text-sm">
+          <div class="inline-block relative w-full">
+            <input
+              type="email"
+              placeholder="Email Address"
+              required
+              class="block w-full rounded-full border border-gray-500 px-5 p-4 text-black leading-none"
+            />
+            <button
+              type="submit"
+              href="#"
+              class="absolute inset-y-0 right-0 flex items-center px-6 text-gray-700 bg-red-500 rounded-full shadow-lg"
+            >
+              <svg
+                class="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 10 20"
+              >
+                <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
+              </svg>
+            </button>
+          </div>
+        </form>
+        <p class="pl-16 pt-2 text-red-500 text-xs">Please provide a valid email</p>
+
+        <footer class="pt-5">
+          <p class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+            >.<br />
+            Made with &hearts; by <a href="http://www.mitchwd/">@mitchwd</a>.
+          </p>
+        </footer>
+      </div>
+      <div class="flex-1 hidden lg:block">
+        <img
+          src="images/hero-desktop.jpg"
+          class="h-screen hidden lg:block"
+          alt="Hero image of a woman win a peach shirt"
+        />
+      </div>
+    </div>
   </body>
 </html>
