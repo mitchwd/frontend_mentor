@@ -33,9 +33,9 @@
       }
     </style>
   </head>
-  <body class="container mx-auto font-normal leading-relaxed subpixel-antialiased">
+  <body class="container mx-auto md:w-3/5 font-normal leading-relaxed subpixel-antialiased">
     <div class="my-16 mx-10">
-      <section class="bg-white rounded-t-md p-5">
+      <section class="bg-white rounded-t-md p-5 md:p-10">
         <h1 class="text-2xl font-bold text-teal-500">Join our community</h1>
         <h2 class="text-xl font-bold text-green-500 pt-5 leading-tight">
           30-day, hassle-free money back guarantee
@@ -46,31 +46,36 @@
         </p>
       </section>
 
-      <section class="bg-teal-500 p-5 text-white">
-        <h1 class="text-2xl font-bold">Monthly Subscription</h1>
-        <h2 class="text-lg text-teal-400">
-          <span class="text-4xl font-bold text-white pr-2 align-middle">&dollar;29</span> per month
-        </h2>
-        <p>Full access for less than &dollar;1 a day</p>
-        <a
-          href="#"
-          class="block w-full bg-green-400 rounded-md text-xl text-center text-white text-bold mt-8 py-3 shadow-lg"
-          >Sign Up</a
-        >
-      </section>
+      <div class="md:flex md:rounded-b-md">
+        <section class="md:flex-1 md:rounded-bl-md bg-teal-500 p-5 md:p-10 text-white">
+          <h1 class="text-2xl font-bold">Monthly Subscription</h1>
+          <h2 class="text-lg text-teal-400">
+            <span class="text-4xl font-bold text-white pr-2 align-middle">&dollar;29</span> per
+            month
+          </h2>
+          <p>Full access for less than &dollar;1 a day</p>
+          <a
+            href="#"
+            class="block w-full bg-green-400 rounded-md text-xl text-center text-white text-bold mt-8 py-3 shadow-lg hover:shadow-sm hover:bg-green-500"
+            >Sign Up</a
+          >
+        </section>
 
-      <section class="bg-teal-400 rounded-b-md p-5 text-white">
-        <h1 class="text-2xl font-bold">Why Us</h1>
-        <ul class="leading-normal text-teal-300 pt-5 text-sm">
-          <li>Tutorials by industry experts</li>
-          <li>Peer &amp; expert code review</li>
-          <li>Coding exercises</li>
-          <li>Access to our GitHub repos</li>
-          <li>Community forum</li>
-          <li>Flashcard decks</li>
-          <li>New videos every week</li>
-        </ul>
-      </section>
+        <section
+          class="md:flex-1 bg-teal-400 rounded-b-md sm:rounded-l-none p-5 md:p-10 text-white"
+        >
+          <h1 class="text-2xl font-bold">Why Us</h1>
+          <ul class="leading-normal text-teal-200 pt-5 text-sm">
+            <li>Tutorials by industry experts</li>
+            <li>Peer &amp; expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ul>
+        </section>
+      </div>
     </div>
 
     <footer>
