@@ -1,33 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,regular,600"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  We're coming soon
+    <style>
+      body {
+        font: 16px "Josefin Sans", sans-serif;
+        color: hsl(0, 36%, 70%);
+      }
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+  <body class="container mx-auto">
+    <header class="w-full p-10">
+      <img src="images/logo.svg" alt="Base Apparel Logo" />
+    </header>
+
+    <img
+      src="images/hero-mobile.jpg"
+      class="w-full md:hidden"
+      alt="Hero image of a woman win a peach shirt"
+    />
+
+    <h1 class="text-5xl text-center uppercase font-light tracking-widest pt-16">
+      We're<br />
+      <span class="font-normal text-black">coming<br />soon</span>
+    </h1>
+
+    <p class="pt-5 leading-relaxed text-center p-10">
+      Hello fellow shoppers! We're currently building our new fashion store. Add your email below to
+      stay up-to-date with announcements and our launch deals.
     </p>
-  </footer>
-</body>
+
+    <form action="#" class="w-10/12 mx-auto text-sm">
+      <div class="inline-block relative w-full">
+        <input
+          type="email"
+          placeholder="Email Address"
+          required
+          class="block w-full rounded-full border border-gray-500 px-5 p-4 text-black leading-none"
+        />
+        <button type="submit"
+        href="#" class="absolute inset-y-0 right-0 flex items-center px-6 text-gray-700 bg-red-500 rounded-full shadow-lg"
+        >
+          <svg
+              class="fill-current h-4 w-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 10 20"
+            >
+              <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
+            </svg>
+        </div>
+      </button>
+      <p class="pl-4 pt-2 text-red-500 text-xs">Please provide a valid email</p>
+    </div>
+    </form>
+
+    <footer class="pt-5">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+        >.<br />
+        Made with &hearts; by <a href="http://www.mitchwd/">@mitchwd</a>.
+      </p>
+    </footer>
+  </body>
 </html>
